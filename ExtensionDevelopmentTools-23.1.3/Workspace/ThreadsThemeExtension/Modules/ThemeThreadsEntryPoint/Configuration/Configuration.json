@@ -1,0 +1,8 @@
+{
+    "type": "object",
+    "group": {
+        "id": "threadsConfig",
+        "title": "Threads Theme",
+        "description": "Threads Theme Configuration"
+    }
+}

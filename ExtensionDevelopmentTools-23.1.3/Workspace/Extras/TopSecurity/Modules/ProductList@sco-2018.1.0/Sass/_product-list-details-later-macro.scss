@@ -1,0 +1,157 @@
+.product-list-details-later-macro-selectable-actionable {
+}
+
+/* Save for Later */
+
+.product-list-details-later-macro-thumbnail {
+	//@extend .col-xs-3;
+	//@extend .col-sm-12;
+}
+
+.product-list-details-later-macro-details {
+	//@extend .col-xs-9;
+	//@extend .col-sm-12;
+}
+
+.product-list-details-later-macro-name-link{
+	 
+}
+
+.product-list-details-later-macro-price {
+	@extend .transaction-line-views-cell-actionable-price;
+}
+
+.product-list-details-later-macro-qty {
+	@extend .transaction-line-views-cell-actionable-qty;
+}
+
+.product-list-details-later-macro-qty-form {
+}
+
+.product-list-details-later-macro-input-qty {
+	@extend .transaction-line-views-cell-actionable-input-qty;
+}
+
+.product-list-details-later-macro-button-quantity-add {
+	@extend .saveforlater-quantity-add;
+	display: none;
+}
+
+
+.product-list-details-later-macro-button-quantity-minus {
+	@extend .saveforlater-quantity-minus;
+	display: none;
+}
+
+.product-list-details-later-macro-item-stock {
+}
+
+.product-list-details-later-macro-actions {
+	@extend .saveforlater-actions;
+	align-items: center;
+    width: 100%;
+}
+
+.remove-icon{
+	@extend .icon-remove;
+	display: none;
+
+	@media (max-width: $screen-xs-max) {
+		display: inline-block;
+		padding: 0px 11px;
+	}
+}
+
+.product-list-details-later-macro-actions {
+	
+	
+	.cart-add-to-cart-button-button {
+		width: unset;
+	}
+	.buttonText {
+		display: none;
+	}
+	.link-separator {
+		display: none;
+	}
+	// .cart-add-to-cart-button-button {
+	// 	padding:5px;
+	// }
+
+	span {
+	    padding: 0;
+	    width: 5%;
+	    text-align: center;
+	}
+	@media (max-width: $screen-xs-max) {
+		button {
+			display:inline-block;
+		}
+		span {
+			display:none;
+		}
+	}
+
+	@media (min-width: $screen-sm-min) {
+		button {
+			// Philip Test
+			//@extend .button-small;
+			//@extend .button-secondary;
+			display:inline-block;
+			
+		}
+		span {
+			display:block;
+		}
+	}
+}
+
+
+
+#product-list-details-later-macro-button-addtocart{
+	// @extend .button-saveforlater-addtocart;
+	@extend .button-primary;
+	@extend .button-small;
+	padding: 0; // @extend .ts-addtocart-size;
+	width: auto;
+    /* margin-top: 5px; */
+    text-transform: capitalize;
+	float: right;
+}
+
+.product-list-details-later-macro-button-remove{
+	@extend .button-saveforlater-remove;
+	@extend .button-primary;
+	@extend .button-small;
+	width: auto;
+    /* margin-top: 5px; */
+    text-transform: capitalize;
+    padding: 0px 5px;
+    height: 46px;
+    /* float: right; */
+}
+
+
+
+.product-list-details-later-macro-label-qty{
+	// @extend .transaction-line-views-cell-actionable-label-qty;
+	display: none;
+}
+
+.product-list-details-later-macro-qty-input{
+	display: none;
+}
+
+.product-list-details-later-macro-qty input[type=number]{
+	width:60px;
+	@media (min-width: $screen-xs-min){
+		width:45px;
+	}
+	@media (min-width: $screen-md-min){
+		width:60px;
+	}
+}
+
+.product-list-details-later-macro-amount{}
+.product-list-details-later-macro-info{}
+

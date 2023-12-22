@@ -1,0 +1,74 @@
+{
+    "name": "AdvancedIntermediaryScreen",
+    "fantasyName": "AdvancedIntermediaryScreen",
+    "vendor": "CloudAlp",
+    "version": "1.0.0",
+    "type": "extension",
+    "target": "SCS,SCA",
+    "target_version": {
+        "SCS": "",
+        "SCA": ""
+    },
+    "description": "Show AdvancedIntermediaryScreen products when click on add to cart in quick modal pop.",
+    "skins": [],
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": [
+                "services/AdvancedIntermediaryScreen.Service.ss"
+            ]
+        }
+    },
+    "configuration": {
+        "files": [
+            "Modules/AdvancedIntermediaryScreen/Configuration/AdvancedIntermediaryScreen.json"
+        ]
+    },
+    "sass": {
+        "entry_points": {
+            "shopping": "Modules/AdvancedIntermediaryScreen/Sass/_advancedintermediaryscreen-advancedintermediaryscreen.scss"
+        },
+        "files": [
+            "Modules/AdvancedIntermediaryScreen/Sass/_advancedintermediaryscreen-advancedintermediaryscreen.scss"
+        ]
+    },
+    "templates": {
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/AdvancedIntermediaryScreen/Templates/cloudalp_advancedintermediaryscreen_advancedintermediaryscreen.tpl"
+                ]
+            }
+        }
+    },
+    "javascript": {
+        "entry_points": {
+            "shopping": "Modules/AdvancedIntermediaryScreen/JavaScript/CloudAlp.AdvancedIntermediaryScreen.AdvancedIntermediaryScreen.js"
+        },
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/AdvancedIntermediaryScreen/JavaScript/CloudAlp.AdvancedIntermediaryScreen.AdvancedIntermediaryScreen.js",
+                    "Modules/AdvancedIntermediaryScreen/JavaScript/AdvancedIntermediaryScreen.View.js",
+                    "Modules/AdvancedIntermediaryScreen/JavaScript/CloudAlp.AdvancedIntermediaryScreen.AdvancedIntermediaryScreen.Model.js"
+                ]
+            }
+        }
+    },
+    "ssp-libraries": {
+        "entry_point": "Modules/AdvancedIntermediaryScreen/SuiteScript/CloudAlp.AdvancedIntermediaryScreen.AdvancedIntermediaryScreen.js",
+        "files": [
+            "Modules/AdvancedIntermediaryScreen/SuiteScript/CloudAlp.AdvancedIntermediaryScreen.AdvancedIntermediaryScreen.js",
+            "Modules/AdvancedIntermediaryScreen/SuiteScript/AdvancedIntermediaryScreen.ServiceController.js"
+        ]
+    },
+    "local_folder": "Workspace\\AdvancedIntermediaryScreen",
+    "suitescript2": {
+        "files": []
+    }
+}

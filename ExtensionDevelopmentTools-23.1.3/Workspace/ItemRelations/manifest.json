@@ -1,0 +1,77 @@
+{
+    "name": "ItemRelations",
+    "fantasyName": "My Cool Extension!",
+    "vendor": "CloudAlp",
+    "version": "1.0.0",
+    "type": "extension",
+    "target": "SCS,SCA",
+    "target_version": {
+        "SCS": "",
+        "SCA": ""
+    },
+    "description": "",
+    "skins": [],
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": [
+                "services/ItemRelations.Service.ss"
+            ]
+        }
+    },
+    "configuration": {
+        "files": [
+            "Modules/ItemRelations/Configuration/ItemRelations.json"
+        ]
+    },
+    "sass": {
+        "entry_points": {
+            "shopping": "Modules/ItemRelations/Sass/_itemrelations-itemrelations.scss"
+        },
+        "files": [
+            "Modules/ItemRelations/Sass/_itemrelations-itemrelations.scss"
+        ]
+    },
+    "templates": {
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/ItemRelations/Templates/cloudalp_itemrelations_itemrelations.tpl"
+                ]
+            }
+        }
+    },
+    "javascript": {
+        "entry_points": {
+            "shopping": "Modules/ItemRelations/JavaScript/CloudAlp.ItemRelations.ItemRelations.js"
+        },
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/ItemRelations/JavaScript/CloudAlp.ItemRelations.ItemRelations.js",
+                    "Modules/ItemRelations/JavaScript/ItemRelations.View.js",
+                    "Modules/ItemRelations/JavaScript/CloudAlp.ItemRelations.ItemRelations.Model.js",
+                    "Modules/ItemRelations/JavaScript/CloudAlp.ItemRelations.ItemRelations.SS2Model.js"
+                ]
+            }
+        }
+    },
+    "ssp-libraries": {
+        "entry_point": "Modules/ItemRelations/SuiteScript/CloudAlp.ItemRelations.ItemRelations.js",
+        "files": [
+            "Modules/ItemRelations/SuiteScript/CloudAlp.ItemRelations.ItemRelations.js",
+            "Modules/ItemRelations/SuiteScript/ItemRelations.ServiceController.js"
+        ]
+    },
+    "local_folder": "Workspace\\ItemRelations",
+    "suitescript2": {
+        "files": [
+            "Modules/ItemRelations/SuiteScript2/ItemRelations.Service.ss"
+        ]
+    }
+}

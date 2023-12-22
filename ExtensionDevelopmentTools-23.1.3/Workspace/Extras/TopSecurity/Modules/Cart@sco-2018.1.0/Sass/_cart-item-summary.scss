@@ -1,0 +1,110 @@
+/* Edited for Threads Theme */
+
+.cart-item-summary-label {
+	display: block; //reset
+}
+
+.cart-item-summary-item-list-actionable-container-qty {
+	display: flex;
+}
+
+.cart-item-summary-item-list-actionable-label-qty {
+	flex: 1;
+	display: none;
+
+	@extend .sc-label;
+	margin-bottom: 0;
+
+	@media (min-width: 400px) { //$screen-xs-min special for very small screens like iphone 5
+		display: none;
+		margin-right: 10px;
+    	height: 28px;
+    	margin-top: 8px;
+	}
+}
+.cart-item-summary-item-list-actionable-input-qty {
+	flex: 2;
+	@extend .sc-value;
+
+	@media (min-width: $screen-md-min) {
+		display: inline-block;
+		vertical-align: middle;
+		//margin-left: $sc-margin-lv2;
+	}
+}
+
+.cart-item-summary-item-list-actionable-amount{ // for mobile flex off
+	//@extend .transaction-line-views-cell-actionable-amount;
+	// display: flex;
+	@media (max-width: $screen-xs-max) {
+		display: unset;
+		
+	}
+	
+}
+
+.cart-item-summary-item-list-actionable-amount-label{
+	//@extend .transaction-line-views-cell-actionable-amount-label;
+	flex: 1;
+	align-self: flex-end;
+}
+
+.cart-item-summary-prices {
+	flex: 2;
+	// align-self: flex-end;
+	line-height: 1.25;
+}
+
+.cart-item-summary-item-view-old-price{
+	// @extend .transaction-line-views-price-old;
+	@extend .ts-pricelevel1-text;
+	text-decoration: line-through;
+}
+
+.cart-item-summary-amount-value{
+	// font-weight: $sc-font-weight-semibold;
+	// font-size: $sc-font-size-xxl;
+	@extend .ts-pricelevel1-text; 
+	// color: $sc-color-orange;
+	
+}
+span.cart-item-summary-amount-value.orange {
+	color: $sc-color-orange;
+}
+
+.cart-item-summary-quantity-title-help{
+	clear: both;
+	margin-top: $sc-margin-lv1;
+	display: block;
+	font-weight:$sc-font-weight-light;
+}
+// quantity input
+.cart-item-summary-quantity-add {
+	@extend .quantity-input-button-add;
+
+}
+
+.cart-item-summary-quantity-remove {
+	@extend .quantity-input-button-remove;
+}
+
+.cart-item-summary-quantity-add, .cart-item-summary-quantity-remove {
+	display: block !important;
+}
+
+.cart-item-summary-quantity-value { 
+	 @extend input.product-details-quantity-value[type="number"]; 
+	 
+	// height: auto !important;
+	// padding: 7px !important;
+	// border-color: $sc-color-secondary !important;
+}
+
+.cart-item-summary-promocodes .cart-promocode-list-item-container{
+	@extend .transaction-line-views-cell-actionable-amount-label;
+	padding-left: 0;
+}
+
+.cart-item-summary-promocodes .cart-promocode-list-item-code-value {
+	@extend .sc-value;
+}

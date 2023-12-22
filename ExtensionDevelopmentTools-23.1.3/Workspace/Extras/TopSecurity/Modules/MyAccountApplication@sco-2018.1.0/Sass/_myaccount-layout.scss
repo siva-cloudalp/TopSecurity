@@ -1,0 +1,146 @@
+.myaccount-layout {
+	@extend %sc-layout;
+}
+
+.myaccount-layout-container{
+	// Footer module will set a bottom padding with the size of the footer	(on Footer.View.js)
+	@extend .container;
+	@include site-max-width-container; 
+	padding: 0 $sc-padding-lv3 $sc-padding-lv3 $sc-padding-lv3;
+}
+
+.myaccount-layout-header {
+	@include box-shadow(3px 0px 6px $sc-color-secondary);
+  margin-bottom: $sc-margin-lv5;
+}
+
+.myaccount-layout-row{
+	@extend .row;
+}
+
+.myaccount-layout-main{
+	@extend .col-xs-12;
+	@extend .col-sm-9;
+	padding-top: 10px;
+	h2{
+		font-weight: 400;
+	}
+	@media (min-width: $screen-sm-min){
+		margin-bottom: 70px;
+	}
+	.page-not-found {
+		overflow: hidden;
+	}
+}
+
+.myaccount-layout-footer {
+	@extend %sc-footer !optional;
+}
+
+.myaccount-layout-title{
+	margin: $sc-margin-lv4 0;
+	// display:none;
+
+	@media (min-width: $screen-sm-min){
+		display: block;
+	}
+}
+
+.myaccount-layout-no-javascript-msg {
+	@extend .message-warning;
+	width: 100%;
+}
+
+.myaccount-layout-side-nav{
+
+	@extend .col-sm-3;
+	display: none;
+
+	@media (min-width: $screen-sm-min){
+		display: block;
+	}
+}
+
+.force-hide-side-nav{
+
+	.myaccount-layout-side-nav{
+		display: none;
+	}
+
+	.myaccount-layout-title{
+		 display: none;
+	}
+
+	.myaccount-layout-main{
+		@extend .col-sm-12;
+	}
+}
+
+.myaccount-layout-breadcrumb{}
+.myaccount-layout-notifications{}
+.myaccount-layout-error-placeholder{}
+
+
+//credit card payment button styles
+
+
+.paymentinstrument-creditcard-edit-form-button-submit {
+    @extend .button-primary;
+    @extend .button-medium;
+}
+
+.paymentinstrument-creditcard-edit-form-button-cancel {
+    @extend .button-secondary;
+    @extend .button-medium;
+}
+
+.paymentinstrument-creditcard-edit-form-button-reset {
+    @extend .button-tertiary;
+    @extend .button-medium;
+}
+
+.paymentinstrument-creditcard-edit-button-back {
+    @extend .button-tertiary;
+    @extend .button-medium;
+}
+
+.paymentinstrument-creditcard-edit-button-back-icon {
+    @extend .button-back-icon;
+}
+
+.paymentinstrument-creditcard-edit-form-button-edit {
+    @extend .button-tertiary;
+    @extend .button-small;
+    margin-left: 0;
+    text-align: center;
+    margin-right:$sc-margin-lv2;
+
+    @media (min-width: $screen-xs-min)  {
+        margin-bottom:$sc-margin-lv2;
+    }
+}
+
+.paymentinstrument-creditcard-use-this-card-button {
+    @extend .button-primary;
+    @extend .button-medium;
+    margin-top:$sc-margin-lv2;
+    margin-bottom:$sc-margin-lv2;
+
+    @media (min-width: $screen-sm-min) {
+        margin-bottom:0px;
+    }
+}
+
+.paymentinstrument-creditcard-edit-form-button-remove {
+    @extend .button-tertiary;
+    @extend .button-small;
+}
+.paymentinstrument-creditcard-action {
+    @extend .button-link;
+}
+
+.paymentinstrument-creditcard-new-card-plus-icon {
+    @extend .icon-plus;
+    font-size: 2.5rem;
+    color: $sc-color-theme-500;
+}

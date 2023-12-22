@@ -1,0 +1,9 @@
+define('header_wishlist_control_item.tpl', ['Handlebars','Handlebars.CompilerNameLookup'], function (Handlebars, compilerNameLookup){ var t = {"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
+    var helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=container.hooks.helperMissing, alias3="function", alias4=container.escapeExpression;
+
+  return "<div class=\"product-list-control-item\" data-type=\"header-product-list-item\">\r\n    <label class=\"product-list-control-item-label\" data-action=\"header-product-list-item\">\r\n        "
+    + alias4(((helper = (helper = compilerNameLookup(helpers,"itemName") || (depth0 != null ? compilerNameLookup(depth0,"itemName") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"itemName","hash":{},"data":data,"loc":{"start":{"line":3,"column":8},"end":{"line":3,"column":20}}}) : helper)))
+    + " ("
+    + alias4(((helper = (helper = compilerNameLookup(helpers,"listQuantity") || (depth0 != null ? compilerNameLookup(depth0,"listQuantity") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"listQuantity","hash":{},"data":data,"loc":{"start":{"line":3,"column":22},"end":{"line":3,"column":38}}}) : helper)))
+    + ")\r\n    </label>\r\n</div>";
+},"useData":true}; var main = t.main; t.main = function(){ arguments[1] = arguments[1] || {}; var ctx = arguments[1]; ctx._extension_path = 'http://localhost:7777/tmp/extensions/Logitail/TopSecurity/1.1.19/'; ctx._theme_path = 'http://localhost:7777/tmp/extensions/Logitail/TopSecurity/1.1.19/'; return main.apply(this, arguments); }; var template = Handlebars.template(t); template.Name = 'header_wishlist_control_item'; return template;});

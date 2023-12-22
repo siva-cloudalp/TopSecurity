@@ -1,0 +1,63 @@
+/* Edited for Threads Theme */
+
+.order-wizard-termsandconditions-module-top-summary {
+	display:none;
+	margin-top: $sc-margin-lv4;
+	margin-bottom: $sc-margin-lv2;
+	//border-left: 1px solid $sc-color-theme-border;
+	//border-right: 1px solid $sc-color-theme-border;
+
+	@media(min-width: $screen-sm-min){
+		display: block;
+	}
+}
+// terms and conditions below
+.order-wizard-termsandconditions-module-top,
+.order-wizard-termsandconditions-module-bottom{
+	@media(min-width: $screen-sm-min){
+		// display: none;
+	}
+}
+.order-wizard-termsandconditions-module-top{
+		display: none;
+}
+.order-wizard-termsandconditions-module-bottom{
+	margin-top: $sc-margin-lv4;
+}
+
+.order-wizard-termsandconditions-module-default{ // below
+	
+	// display: none;
+	@media(min-width: $screen-sm-min){
+		// display: none;
+		
+		float:right;
+		margin-bottom: $sc-margin-lv4;
+	}
+}
+article.order-wizard-termsandconditions-module-default.module-rendered{
+	.order-wizard-termsandconditions-module-label{
+		@media(max-width: $screen-xs-max){
+			display: none;
+			
+		}
+	}
+}
+
+.order-wizard-termsandconditions-module-label{
+	@media(min-width: $screen-sm-min){
+		// display: none;
+		
+	}
+}
+article.order-wizard-termsandconditions-module-bottom.module-rendered {// lowest position
+	@media(min-width: $screen-sm-min){
+		display: none;
+	}
+}
+article.order-wizard-termsandconditions-module-top-summary.module-rendered {// below the totaal price
+	@media(min-width: $screen-sm-min){
+		display: none;
+	}
+}
+.order-wizard-termsandconditions-module-text{}

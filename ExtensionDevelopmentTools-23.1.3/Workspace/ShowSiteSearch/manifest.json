@@ -1,0 +1,63 @@
+{
+    "name": "ShowSiteSearch",
+    "fantasyName": "Show Site Search",
+    "vendor": "CloudAlp",
+    "version": "1.0.0",
+    "type": "extension",
+    "target": "SCS,SCA",
+    "target_version": {
+        "SCS": "",
+        "SCA": ""
+    },
+    "description": "show search bar beside the logo ",
+    "skins": [],
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": []
+        }
+    },
+    "sass": {
+        "entry_points": {
+            "shopping": "Modules/ShowSiteSearch/Sass/_showsitesearch-showsitesearch.scss",
+            "myaccount": "Modules/ShowSiteSearch/Sass/_showsitesearch-showsitesearch.scss",
+            "checkout": "Modules/ShowSiteSearch/Sass/_showsitesearch-showsitesearch.scss"
+        },
+        "files": [
+            "Modules/ShowSiteSearch/Sass/_showsitesearch-showsitesearch.scss"
+        ]
+    },
+    "javascript": {
+        "entry_points": {
+            "shopping": "Modules/ShowSiteSearch/JavaScript/CloudAlp.ShowSiteSearch.ShowSiteSearch.js",
+            "myaccount": "Modules/ShowSiteSearch/JavaScript/CloudAlp.ShowSiteSearch.ShowSiteSearch.js",
+            "checkout": "Modules/ShowSiteSearch/JavaScript/CloudAlp.ShowSiteSearch.ShowSiteSearch.js"
+        },
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/ShowSiteSearch/JavaScript/CloudAlp.ShowSiteSearch.ShowSiteSearch.js"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/ShowSiteSearch/JavaScript/CloudAlp.ShowSiteSearch.ShowSiteSearch.js"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/ShowSiteSearch/JavaScript/CloudAlp.ShowSiteSearch.ShowSiteSearch.js"
+                ]
+            }
+        }
+    },
+    "local_folder": "Workspace\\ShowSiteSearch",
+    "suitescript2": {
+        "files": []
+    }
+}

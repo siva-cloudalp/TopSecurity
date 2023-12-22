@@ -1,0 +1,13 @@
+{
+    "type": "object",
+    "properties": { 
+        "ItemRelations.config": {
+            "group": "extensions",
+            "subtab": "ItemRelations_subtab",
+            "type": "string",
+            "title": "ItemRelations_Title",
+            "description": "Config description example",
+            "default": "Default config example"
+        }
+    }
+}

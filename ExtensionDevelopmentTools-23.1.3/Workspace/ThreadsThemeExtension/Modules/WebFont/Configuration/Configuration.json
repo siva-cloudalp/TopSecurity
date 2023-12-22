@@ -1,0 +1,38 @@
+{
+    "type": "object",
+    "subtab": {
+        "id": "threadsWebFonts",
+        "title": "Web Fonts",
+        "group": "threadsConfig"
+    },
+    "properties": {
+        "threads.webFonts.isWebFontEnabled": {
+            "group": "threadsConfig",
+            "subtab": "threadsWebFonts",
+            "type": "boolean",
+            "title": "Enable Web Fonts",
+            "default": true
+        },
+        "threads.webFonts.isWebFontAsync": {
+            "group": "threadsConfig",
+            "subtab": "threadsWebFonts",
+            "type": "boolean",
+            "title": "Load Web Fonts Script Asynchronously",
+            "default": true
+        },
+        "threads.webFonts.webFontConfig.google.families": {
+            "group": "threadsConfig",
+            "subtab": "threadsWebFonts",
+            "type": "array",
+            "title": "Web Fonts Config Google Families",
+            "items": {
+                "type": "string",
+                "title": "Google Families",
+                "description": ""
+            },
+            "default": [
+                "Barlow+Semi+Condensed:200,300,400,600,800,800i"
+            ]
+        }
+    }
+}

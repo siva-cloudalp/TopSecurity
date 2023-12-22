@@ -1,0 +1,13 @@
+{
+    "type": "object",
+    "properties": { 
+        "AdvancedIntermediaryScreen.config": {
+            "group": "extensions",
+            "subtab": "AdvancedIntermediaryScreen_subtab",
+            "type": "string",
+            "title": "AdvancedIntermediaryScreen_Title",
+            "description": "Config description example",
+            "default": "Default config example"
+        }
+    }
+}

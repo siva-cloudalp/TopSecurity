@@ -1,0 +1,14 @@
+.paymentmethod-creditcard-list{
+    @extend .box-column;
+    
+}
+
+[data-view="CreditCards.Collection"] .backbone-collection-view-row{
+    padding: 0 !important;
+    // .backbone-collection-view-cell-span4:first-child{
+    //     padding-left: 0;
+    // }
+}
+.paymentmethod-creditcard-list-collection .backbone-collection-view-row {
+  padding: 0 !important;
+}

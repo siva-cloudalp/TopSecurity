@@ -1,0 +1,20 @@
+{
+  "generator-extension": {
+    "ext_application": {
+      "ShowSiteSearch": [
+        "shopping",
+        "myaccount",
+        "checkout"
+      ],
+      "LoginPageOverRide": [
+        "checkout"
+      ],
+      "AdvancedIntermediaryScreen": [
+        "shopping"
+      ],
+      "ItemRelations": [
+        "shopping"
+      ]
+    }
+  }
+}

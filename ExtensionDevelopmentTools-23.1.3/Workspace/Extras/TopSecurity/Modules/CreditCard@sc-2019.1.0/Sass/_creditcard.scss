@@ -1,0 +1,253 @@
+$credit-card-height: 230px;
+$credit-card-height-offset: 20px;
+.button-link {
+	background: #07afff;
+    color: white;
+	font-weight: $sc-font-weight-normal;
+	border: none;
+	display: inline-block;
+	padding: $sc-padding-lv1;
+    //margin-right: $sc-margin-lv2;
+    border-radius: $sc-border-radius;
+
+	&:hover {
+		color: $sc-color-link-hover;
+	}
+
+	&:focus {
+		color: $sc-color-link-hover;
+	}
+
+	&:active {
+		color: $sc-color-link-hover;
+	}
+
+	&:disabled {
+		opacity: 0.6;
+		cursor: default;
+	}
+}
+
+.creditcard {
+    //  THE BELOW DOENS'T COMPILE
+    //@extend .col-lg-4;
+    // @extend .col-sm-6;
+    // @extend .address-card-container;
+    margin-bottom: $sc-margin-lv4;
+    
+}
+
+.creditcard-require-field {
+    margin-bottom: $sc-margin-lv4;
+    margin-top: $sc-margin-lv2;
+    display: inline-block;
+}
+
+.creditcard-required {
+  // @extend .input-required;
+}
+
+.overview-payment .creditcard,
+.order-wizard-paymentmethod-creditcard-module .creditcard {
+    width: 100%;
+    padding: 0;
+}
+
+.creditcard-content {
+    width: 100%;
+
+    @media(min-width: $screen-sm-min) {
+        min-height: $credit-card-height + $credit-card-height-offset;
+    }
+}
+
+.creditcard-list .creditcard-content,
+.creditcard-module-list-placeholder .creditcard-content {
+    @extend .info-card;
+
+    @media(min-width: $screen-sm-min) {
+        min-height: $credit-card-height + $credit-card-height-offset;
+    }
+}
+
+.creditcard-section {
+    @extend .col-xs-12;
+    margin-bottom: $sc-margin-lv2;
+    padding: 0;
+}
+
+.creditcard-number {
+    display: inline-block;
+}
+
+.creditcard-security-code-section {
+    @extend .col-xs-12;
+    padding: 0;
+    @media(max-width: $screen-xs-max) {
+        padding-bottom: $sc-padding-lv2;
+    }
+}
+
+.creditcard-header-icon {
+    float: right;
+    margin-right: $sc-margin-lv1;
+    width:auto;
+    height:$sc-target-size-mobile;
+}
+
+.creditcard-default {
+    @extend .address-details-default-billing;
+}
+
+.creditcard-default-icon {
+    @extend .address-details-default-shipping-icon;
+}
+
+.creditcard-actions {
+    clear: both;
+    margin-top: $sc-margin-lv3;
+    //text-align: right;
+    margin-bottom: $sc-margin-lv1;
+}
+a.creditcard-action {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.creditcard-edit-form-button-edit {
+    @extend .button-tertiary;
+    @extend .button-small;
+    margin-left: 0;
+    text-align: center;
+    margin-right:$sc-margin-lv2;
+
+    @media (min-width: $screen-xs-min) and (max-width: $screen-lg-min)  {
+        margin-bottom:$sc-margin-lv2;
+    }
+}
+
+.creditcard-use-this-card-button {
+    @extend .button-primary;
+    @extend .button-medium;
+    @extend .button-generic;
+    margin-top:$sc-margin-lv2;
+    margin-bottom:$sc-margin-lv2;
+
+    @media (min-width: $screen-sm-min) {
+        margin-bottom:0px;
+    }
+}
+
+.creditcard-edit-form {
+    clear:both;
+}
+
+.creditcard-edit-form-button-remove {
+    @extend .button-tertiary;
+    @extend .button-small;
+}
+
+.creditcard-name {
+    margin-bottom:$sc-margin-lv2;
+}
+
+// checkout specific (hide back to myaccount btn)
+.checkout-layout ~ .modal-container .creditcard-edit-back {
+    display: none;
+}
+
+.creditcard-new-card {
+	// @extend .new-address-card-container;
+    height: 154px;
+}
+
+.creditcard-new-card-title {
+
+    display: none;
+    margin-top: 20px;
+    color: $sc-neutral-shade-300;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.creditcard-action {
+    @extend .button-edit;
+    
+}
+
+button.creditcard-action {
+    @extend .creditcard-action; // background: rebeccapurple !important;
+}
+
+.creditcard-container {
+    padding: $sc-padding-lv2 $sc-padding-lv3;
+    
+}
+
+.creditcard-selector {
+   // @extend .address-card-container;
+    cursor: pointer;
+    border-bottom: 0px;
+    padding: $sc-padding-lv3;
+    padding: 15px;
+    /* margin-bottom: 0; */
+    display: inherit;
+    border-left: $sc-button-color-secondary solid 1px;
+    border-right: $sc-button-color-secondary solid 1px;
+    border-top: $sc-button-color-secondary solid 1px;
+}
+
+.creditcard-selected {
+	background-color: $sc-neutral-shade-0;
+}
+
+.creditcard-selector-option {
+    margin-bottom: 0px;
+    cursor: pointer;
+}
+
+.creditcard-new-card-plus-icon {
+	// @extend .icon-plus;
+    font-size: 2.5rem;
+    color: $sc-color-theme-500;
+}
+
+#creditcard-module-list-placeholder .backbone-collection-view-row {
+    // background: rebeccapurple;
+    padding: 0;
+}
+
+button.creditcard-use-this-card-button {
+    display: none;
+}
+// div[data-view="CreditCard.View"] {
+//     //border: red solid;
+// }
+
+div[data-view="CreditCard.List"] {
+
+    .creditcard-container {
+        padding: $sc-padding-lv2 $sc-padding-lv3;
+        border-left: $sc-button-color-secondary solid 1px;
+        border-right: $sc-button-color-secondary solid 1px;
+        border-bottom: $sc-button-color-secondary solid 1px;
+    } 
+
+    .backbone-collection-view-cell-span6{
+        @media (min-width: $screen-sm-min) {
+            margin-bottom:0px;
+        }
+        width: unset;
+    }
+}
+.paymentmethod-creditcard-list-collection .backbone-collection-view-row  {
+    /* background: red; */
+    padding: 0 !important;
+    .backbone-collection-view-cell-span4{
+        // background: red;
+        &:first-child{
+            padding-left: 0 !important;
+            
+        }
+    }
+}

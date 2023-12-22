@@ -1,0 +1,24 @@
+/*
+	Sass Application Entry Point
+	Link all your sass dependencies in the right order
+
+	Example:
+	@import "other-sass-file.scss";
+	@import "../../<other module>/Sass/other-sass-file.scss";
+*/
+@media (min-width: $screen-md-min) {
+	.header-override-search {
+		display: flex;
+		width: 100%;
+		align-items: center;
+	}
+	.site-search {
+		border-top: none;
+	}
+	.header-secondary-wrapper {
+		z-index: auto;
+	}
+	.header-site-search {
+		display: block;
+	}
+}

@@ -1,0 +1,72 @@
+// Edited for Threads Theme */
+
+// .item-relations-cell {
+//     padding-right: 32px;
+//     line-height: 1.5;
+// }
+.product-details-full-content-related-items {
+    .item-relations-cell {
+        // padding-right: 32px;
+        line-height: 1.5;
+        width: 322px !important;
+        margin: 0 15px;
+        @media (max-width: $screen-xs-max) {
+            margin: unset;
+            
+}
+    }
+    .item-relations-related-item-thumbnail {
+           //@extend width: 322px;
+    }
+}
+
+
+a.item-relations-related-item-title {
+    //width: 90%;
+    display: block !important;
+    height: 92px !important;
+}
+
+
+// brand
+// .item-relations-related-item-link .item-relations-related-item-brand{
+//     @extend .item-cell-grid-brand;
+
+// }
+a.item-relations-related-item-link{
+    // @extend .item-cell-grid-brand;
+    @extend .facets-item-cell-grid-brand;
+    color: $sc-color-darkblue;
+    min-height:28px;
+}
+
+.item-relations-related-item-title span[itemprop="name"] {
+    display: block; 
+}
+.item-relations-cell div[itemprop="itemListElement"] {
+    width: 95%;
+}
+
+// title
+.item-relations-related-item-title {
+    @extend .facets-item-cell-grid-title;
+}
+
+// sku
+.item-relations-related-item-sku{
+     @extend .item-cell-sku;
+}
+
+// price
+.item-relations-cell .product-views-price-lead{
+    // @extend .facets-item-cell-grid.product-views-price-exact; // can't extend nested selectors :s #sad
+    // https://github.com/sass/libsass/issues/637
+    // @extend .item-cell;
+
+    @extend .ts-pricelevel1-text;
+}
+
+// pricing bruto
+.product-views-price-lead_bruto{
+    @extend .ts-pricebruto-text;
+}

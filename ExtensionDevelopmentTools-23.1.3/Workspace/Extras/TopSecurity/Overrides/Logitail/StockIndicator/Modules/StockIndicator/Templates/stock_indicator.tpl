@@ -1,0 +1,1 @@
+<div data-type="ltsca-stock-indicator"></div>

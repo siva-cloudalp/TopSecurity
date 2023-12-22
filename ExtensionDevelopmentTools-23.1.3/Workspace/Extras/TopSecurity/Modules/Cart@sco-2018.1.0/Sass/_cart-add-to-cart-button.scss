@@ -1,0 +1,82 @@
+// Edited for Threads
+
+.cart-add-to-cart-button-button{
+	@extend .button-primary;
+	@extend .button-large; // not on the pdp
+	width: 100%;
+ 	font-weight: $sc-font-weight-semibold;
+	 //margin-top: $sc-margin-lv3;
+
+		&:hover .add-to-cart-icon{
+			color:$sc-button-primary-hover-text-color;
+		}
+	 
+	
+}
+
+// div#layout.shopping-layout > .cart-add-to-cart-button{
+	
+// }
+
+.cart-add-to-cart-button {
+	position: static;
+	margin-bottom: $sc-margin-lv3 * 2;
+
+	@media (min-width: $screen-md-min) {
+		margin-bottom: 0;
+	}
+	@media (max-width: $screen-xs-max) {
+		margin-bottom: 0;
+	}
+	
+}
+.item-relations-related-item-price{
+	.cart-add-to-cart-button-container {
+		//@extend .col-sm-6;
+		
+	}
+}
+
+
+// added by philipdenys
+#plp-addtocart{
+	
+}
+
+button#addedtocart {
+    background: $sc-color-primary;
+}
+.add-to-cart-icon {
+	@extend .fa;
+    @extend %fa-shopping-cart;
+	font-size: $sc-font-size-xxl;
+	line-height: $sc-target-size;
+	min-width: $sc-target-size;
+	color: white;
+
+	&:hover{
+		color:$sc-button-primary-hover-text-color;
+	}
+}
+.added-to-cart-icon {
+	@extend .icon-success;
+	font-size: $sc-font-size-xxl;
+	line-height: $sc-target-size;
+	min-width: $sc-target-size;
+	color: white;
+	padding: 0 8px;
+
+	&:hover{
+		color:$sc-button-primary-hover-text-color;
+	}
+}
+
+// div[itemprop="itemListElement"] {
+// 	.add-to-cart-icon {
+// 		@extend .fa;
+// 		@extend %fa-shopping-cart;
+// 		font-size: $sc-font-size-xxl;
+// 		line-height: $sc-target-size;
+// 		min-width: $sc-target-size;
+// 		color: white;
+// }

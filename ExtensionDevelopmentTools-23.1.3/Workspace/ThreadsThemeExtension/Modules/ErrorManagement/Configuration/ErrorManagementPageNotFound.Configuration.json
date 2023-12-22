@@ -1,0 +1,53 @@
+{
+    "type": "object",
+    "subtab": {
+        "id": "threadsErrorManagementPageNotFound",
+        "title": "404 Page",
+        "group": "threadsConfig"
+    },
+    "properties": {
+        "errorManagementPageNotFound.pageNotFoundBgrImg": {
+            "group": "threadsConfig",
+            "subtab": "threadsErrorManagementPageNotFound",
+            "type": "string",
+            "title": "Background Image",
+            "description": "Enter the URL location of the background image that sits underneath the text and button but overlaid on top of the main page not found image (optional).",
+            "default": "img/threads-page-not-found.jpg"
+        },
+        "errorManagementPageNotFound.bkgdColor": {
+            "group": "threadsConfig",
+            "subtab": "threadsErrorManagementPageNotFound",
+            "type": "string",
+            "title": "Background Color",
+            "default": "#DADBDA"
+        },
+        "errorManagementPageNotFound.title": {
+            "group": "threadsConfig",
+            "subtab": "threadsErrorManagementPageNotFound",
+            "type": "string",
+            "title": "Title",
+            "default": "Page Not Found"
+        },
+        "errorManagementPageNotFound.text": {
+            "group": "threadsConfig",
+            "subtab": "threadsErrorManagementPageNotFound",
+            "type": "string",
+            "title": "Text",
+            "default": "Sorry, we could not load the content you requested."
+        },
+        "errorManagementPageNotFound.btnText": {
+            "group": "threadsConfig",
+            "subtab": "threadsErrorManagementPageNotFound",
+            "type": "string",
+            "title": "Button Text",
+            "default": "Go Home"
+        },
+        "errorManagementPageNotFound.btnHref": {
+            "group": "threadsConfig",
+            "subtab": "threadsErrorManagementPageNotFound",
+            "type": "string",
+            "title": "Href",
+            "default": "/"
+        }
+    }
+}

@@ -1,0 +1,72 @@
+.order-wizard-paymentmethod-selector-module {
+	@extend .box-column; 
+	font-weight:400;
+	
+	.creditcard-edit-form {
+	  clear: both;
+	}
+	.creditcard-edit-form-securitycode {
+		padding: 0;
+	}
+}
+
+.order-wizard-paymentmethod-selector-module-header {
+	margin-bottom: $sc-margin-lv3;
+	color: $sc-color-secondary; 
+}
+
+.order-wizard-paymentmethod-selector-module-options {
+	@extend .input-large;
+	margin-bottom: $sc-margin-lv2;
+	padding: $sc-padding-lv2;
+	width: 100%;
+
+	@media (min-width: $screen-md-min) {
+		width: 300px;
+	}
+}
+
+.order-wizard-paymentmethod-selector-module-payment-method-selector-content{
+
+}
+div#payment-method-selector-content {
+	
+}
+.order-wizard-paymentmethod-others-module-list .backbone-collection-view-row {
+   padding: 0;
+
+   [class^=backbone-collection-view-cell-span]{ // this changes when you open the page in diff screensizes
+	//background: rebeccapurple;
+	width:100%;
+	padding: 0;
+	}
+
+	
+}
+.order-wizard-paymentmethod-external-module-image {
+	display: none;
+    margin: 10px 0;
+    padding: 20px 0;
+    height: 75px;
+}
+.adyen-alt-pay-list > p {
+    padding: 15px 0;
+}
+
+.order-wizard-paymentmethod-external-module-row {}
+
+.order-wizard-paymentmethod-external-module-column-right > p {
+    display: none; // remove the para below the 
+}
+.order-wizard-paymentmethod-others-module-description{
+	.global-views-message-info {
+		margin: 10px 0 0 0;
+		color: $sc-color-theme-700;
+		background-color: $sc-color-theme-background;
+	
+		p {
+			color: $sc-color-theme-700;
+			font-size:$sc-font-size-s;
+		}
+	}
+}

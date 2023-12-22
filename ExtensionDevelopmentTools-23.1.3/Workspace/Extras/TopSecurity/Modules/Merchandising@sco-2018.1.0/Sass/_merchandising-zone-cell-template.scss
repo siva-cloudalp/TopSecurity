@@ -1,0 +1,135 @@
+/* Edited for Threads Theme */
+
+.merchandising-zone-cell-template{
+	.item-view-lead-price{
+		text-align:center;
+	}
+	.item-views-price{
+		text-align:center;
+	}
+	.item-views-related-item-rate{
+		width:92px;
+		margin:0 auto;
+	}
+	.item-relations-related-item-thumbnail{
+		display: inline-block;
+    	margin-bottom: 0;
+		//min-height:120px;
+		
+	}
+}
+// MZ Merchzone facets
+
+.cms-content-CMS_MERCHZONE {
+    margin-bottom: 15px;
+
+	&:after {
+	    content: '';
+	    display: block;
+	    clear: both;
+	}
+	h3 {
+	    margin-bottom: 15px;
+	}
+
+	.facets-item-cell-grid-details > .row {
+	    margin: 0;
+	}
+	a.facets-item-cell-grid-brand {
+	   @extend .ts-brand-text;
+	   .col-xs-12 {
+		margin-bottom: 7px;
+		}
+	}
+	a.facets-item-cell-grid-brand.col-xs-12 {
+		 margin-bottom: 7px;
+	 }
+
+	a.facets-item-cell-grid-title {
+	    padding: 0;
+	    margin-bottom: 10px;
+	    font-size: $sc-font-size-xl;
+	    span {
+		    @extend .ts-product-title;
+		}
+		.merchzone-sku{
+			@extend .ts-sku-text;
+		}
+	}
+	@media (max-width: $screen-xs-max) {
+		.merchzone-title {
+			height: 70px;
+		}
+	  }
+	
+
+	.facets-item-cell-grid-price { //merchzone
+	    width: 70%;
+	    float: left;
+	    span {
+		    @extend .ts-pricelevel1-text;
+		}
+		span.bruto-price { 
+			@extend .ts-pricebruto-text;
+			@media (max-width: $screen-xs-max) {
+				font-size: 0.7rem;
+			  }
+		}
+	}
+	.cart-add-to-cart-button-container {
+		padding: 0;
+		float: right;
+	    // text-align: right;
+	    // width: 100%;
+	}
+	.facets-item-cell-grid-addtocart {
+	    float: right;
+	    width: 30%;
+
+		.cart-add-to-cart-button-button {
+			@extend .button-primary;
+			@extend .button-medium;
+		    margin-top: 0;
+			padding: 0;
+    		// min-width: 56px;
+		    &:disabled {
+			    font-size: 0 !important;
+			}
+
+
+			&:before {
+			    content: '\f07a';
+			    display: inline-block;
+			    font: normal normal normal 14px/1 FontAwesome;
+			    font-size: inherit;
+			    text-rendering: auto;
+			    -webkit-font-smoothing: antialiased;
+			    -moz-osx-font-smoothing: grayscale;
+			    font-size: $sc-font-size-xxl;
+				line-height: $sc-target-size;
+				min-width: $sc-target-size;
+				color: white;
+
+				
+			}
+			&:hover:before {
+					color:$sc-button-primary-hover-text-color;
+			}
+			&:disabled:after {
+			    content: '. . .';
+			    font-size: $sc-font-size-xxl;
+				line-height: $sc-target-size;
+			}
+			&:disabled:before {
+			    content: none;
+			}
+			i {
+				display: none;
+			}
+		}
+	}
+
+}
+
+
+

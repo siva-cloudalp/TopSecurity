@@ -1,0 +1,41 @@
+/*
+	Sass Application Entry Point
+	Link all your sass dependencies in the right order
+
+	Example:
+	@import "other-sass-file.scss";
+	@import "../../<other module>/Sass/other-sass-file.scss";
+*/
+
+.itemrelations {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	flex-wrap: wrap;
+	flex-direction: row-reverse;
+}
+
+.itemrelations-itemrelations-add-to-cart-button {
+	@extend .cart-add-to-cart-button-button;
+}
+
+.itemrelations-itemrelations-cart {
+	@extend .cart-add-to-cart-button;
+}
+
+.itemrelations-itemrelations-quantity-options {
+	@extend .product-details-quantity-options;
+}
+
+.itemrelations-itemrelations-quantity-container {
+	@extend .product-details-quantity-container;
+}
+.itemrelations-itemrelations-quantity-remove {
+	@extend .product-details-quantity-remove;
+}
+.itemrelations-itemrelations-quantity-value {
+	@extend .product-details-quantity-value;
+}
+.itemrelations-itemrelations-quantity-add {
+	@extend .product-details-quantity-add;
+}

@@ -1,0 +1,18 @@
+{
+    "type": "object",
+    "subtab": {
+      "id": "threadsHeader",
+      "title": "Header",
+      "group": "threadsConfig"
+    },
+    "properties": {
+		"header.bannerText": {
+			"group": "threadsConfig",
+			"subtab": "threadsHeader"
+		,	"type": "string"
+		,	"title": "Banner Text"
+		,	"description": "Promotional text at the top of the header."
+		,   "default": "FREE SHIPPING on orders over $20"
+		}
+	}
+}

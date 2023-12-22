@@ -1,0 +1,10 @@
+.cms-landing-page {	
+  @extend .container;
+  margin-top: $sc-margin-lv4;
+}
+.cms-landing-page-row {
+	@extend .row; 
+}
+.cms-landing-page-row-full-col {
+	@extend .col-md-12; 
+}

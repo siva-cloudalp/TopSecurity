@@ -1,0 +1,230 @@
+{
+    "type": "object",
+    "subtab": {
+        "id": "threadsHome",
+        "title": "Home",
+        "group": "threadsConfig"
+    },
+    "properties": {
+        "home.autoPlayCarousel": {
+            "group": "threadsConfig",
+            "subtab": "threadsHome",
+            "type": "boolean",
+		    "title": "Autoplay Carousel",
+            "description": "Autoplay carousel",
+            "default": false
+        },
+        "home.carouselSpeed": {
+            "group": "threadsConfig",
+            "subtab": "threadsHome",
+            "type": "integer",
+            "title": "Carousel Speed (milliseconds)",
+            "description": "Carousel speed between each slide in milliseconds. Ex. 5000 is 5 seconds",
+            "default": 5000
+        },
+        "home.themeCarouselImages": {
+            "group": "threadsConfig",
+            "subtab": "threadsHome",
+            "type": "array",
+            "docRef": "threadshead_4666978268",
+            "title": "Carousel images",
+            "description": "Carousel image Urls, plus overlaid text and link to click through to.",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "title": {
+                        "type": "string",
+                        "title": "Title"
+                    },
+                    "text": {
+                        "type": "string",
+                        "title": "Text"
+                    },
+                    "image": {
+                        "type": "string",
+                        "title": "Image Url"
+                    },
+                    "imageMobile": {
+                        "type": "string",
+                        "title": "Image Url (Mobile)"
+                    },
+                    "linktext": {
+                        "type": "string",
+                        "title": "Link Text"
+                    },
+                    "href": {
+                        "type": "string",
+                        "title": "Link Location"
+                    },
+			        "class": {
+          				"type": "string",
+          				"title": "Class Name",
+                        "enum": ["carousel-left", "carousel-center", "carousel-right"]
+          			},
+                    "imageBehaviour": {
+                      "type": "string",
+                      "title": "Image as background",
+                      "enum": ["", "disabled"]
+                    },
+                    "backgroundCrop": {
+                      "type": "string",
+                      "title": "Background crop side",
+                      "enum": ["left", "right", "centered"]
+                    },
+                    "captionTextAlign": {
+                      "type": "string",
+                      "title": "Caption text align",
+                      "enum": ["left", "right", "centered"]
+                    },
+                    "captionColor": {
+                        "type": "string",
+                        "title": "Text Color"
+                    }
+                }
+            },
+            "default": [{
+                    "title": "Denim is in",
+                    "text": "It's official, our stylists said so.",
+                    "image": "img/threads-carousel-home-1.jpg",
+                    "imageMobile": "",
+                    "linktext": "Shop Now",
+                    "href": "/search",
+                    "class": "carousel-left",
+                    "imageBehaviour": "",
+                    "backgroundCrop": "right",
+                    "captionTextAlign": "",
+                    "captionColor": ""
+                },
+                {
+                    "title": "Summer vibing",
+                    "text": "This summer's looks, all for you.",
+                    "image": "img/threads-carousel-home-2.jpg",
+                    "imageMobile": "",
+                    "linktext": "Shop Now",
+                    "href": "/search",
+                    "class": "carousel-left",
+                    "imageBehaviour": "",
+                    "backgroundCrop": "right",
+                    "captionTextAlign": "",
+                    "captionColor": ""
+                },
+                {
+                    "title": "Find your fit",
+                    "text": "One size does not fit all, and we know it.",
+                    "image": "img/threads-carousel-home-3.jpg",
+                    "imageMobile": "",
+                    "linktext": "Shop Now",
+                    "href": "/search",
+                    "class": "carousel-left",
+                    "imageBehaviour": "",
+                    "backgroundCrop": "right",
+                    "captionTextAlign": "",
+                    "captionColor": ""
+                }
+            ]
+        },
+        "home.infoblock": {
+            "group": "threadsConfig",
+            "subtab": "threadsHome",
+            "type": "array",
+            "title": "Infoblocks",
+            "description": "Infoblock banners that link through to specified areas. Will accept any number of lines but the section was designed for 5 blocks with the fifth being a larger size.",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "title": {
+                        "type": "string",
+                        "title": "Title"
+                    },
+                    "text": {
+                        "type": "string",
+                        "title": "Text"
+                    },
+                    "image": {
+                        "type": "string",
+                        "title": "Background Image URL"
+                    },
+                    "color": {
+                        "type": "string",
+                        "title": "Background Color"
+                    },
+                    "href": {
+                        "type": "string",
+                        "title": "Link Location"
+                    }
+                }
+            },
+            "default": [{
+                    "title": "On Sale",
+                    "text": "",
+                    "image": "img/threads-infoblock1-onsale.jpg",
+                    "color": "#a3b9ce",
+                    "href": "#"
+                },
+                {
+                    "title": "Women",
+                    "text": "",
+                    "image": "img/threads-infoblock2-women.jpg",
+                    "color": "#789bb0",
+                    "href": "#"
+                },
+                {
+                    "title": "Men",
+                    "text": "",
+                    "image": "img/threads-infoblock3-men.jpg",
+                    "color": "#789bb0",
+                    "href": "#"
+                },
+                {
+                    "title": "New Arrivals",
+                    "text": "",
+                    "image": "img/threads-infoblock4-newarrivals.jpg",
+                    "color": "#b4bcc2",
+                    "href": "#"
+                }
+            ]
+        },
+        "home.freeTextTitle": {
+            "group": "threadsConfig",
+            "subtab": "threadsHome",
+            "type": "string",
+            "translate": true,
+            "title": "Free Text Title",
+            "description": "Title for free text section.",
+            "default": "Behind The Threads"
+        },
+        "home.freeTextSubtitle": {
+            "group": "threadsConfig",
+            "subtab": "threadsHome",
+            "type": "string",
+            "translate": true,
+            "title": "Free Text Subtitle",
+            "description": "Subtitle for free text section.",
+            "default": "Why we do what we do"
+        },
+        "home.freeTextText": {
+            "group": "threadsConfig",
+            "subtab": "threadsHome",
+            "type": "string",
+            "translate": true,
+            "nsType": "textarea",
+            "title": "Free Text",
+            "description": "Can accept HTML tags.",
+            "default": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat."
+        },
+        "home.freeTextBtnText": {
+            "group": "threadsConfig",
+            "subtab": "threadsHome",
+            "type": "string",
+            "title": "Button Text",
+            "default": "Learn More"
+        },
+        "home.freeTextBtnHref": {
+            "group": "threadsConfig",
+            "subtab": "threadsHome",
+            "type": "string",
+            "title": "Href",
+            "default": "#"
+        }
+    }
+}

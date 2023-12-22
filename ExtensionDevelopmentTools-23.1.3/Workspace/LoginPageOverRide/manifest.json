@@ -1,0 +1,46 @@
+{
+    "name": "LoginPageOverRide",
+    "fantasyName": "LoginPageOverRide",
+    "vendor": "CloudAlp",
+    "version": "1.0.0",
+    "type": "extension",
+    "target": "SCS,SCA",
+    "target_version": {
+        "SCS": "",
+        "SCA": ""
+    },
+    "description": "changed error message when user attempet invalid login and redirect to the lead page.",
+    "skins": [],
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": []
+        }
+    },
+    "configuration": {
+        "files": [
+            "Modules/LoginPageOverRide/Configuration/LoginPageOverRide.json"
+        ]
+    },
+    "javascript": {
+        "entry_points": {
+            "checkout": "Modules/LoginPageOverRide/JavaScript/CloudAlp.LoginPageOverRide.LoginPageOverRide.js"
+        },
+        "application": {
+            "checkout": {
+                "files": [
+                    "Modules/LoginPageOverRide/JavaScript/CloudAlp.LoginPageOverRide.LoginPageOverRide.js"
+                ]
+            }
+        }
+    },
+    "local_folder": "Workspace\\LoginPageOverRide",
+    "suitescript2": {
+        "files": []
+    }
+}

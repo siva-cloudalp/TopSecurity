@@ -1,0 +1,23 @@
+.product-list-control-new-item-button-create{
+	@extend .button-small;
+	@extend .button-tertiary;
+	//margin:$sc-margin-lv3;
+	margin-top:$sc-margin-lv4;
+	text-transform:none;
+	// float:right;
+}
+.product-list-control-new-item-add-new-list-form{
+	display: none;
+}
+
+.product-list-control-new-item-add-new-list-input-container{
+	padding: $sc-padding-lv3 0;
+	
+}
+
+.product-list-control-new-item-add-new-list-input{
+
+}
+
+.product-list-control-new-item-add-new-list-buttons{}
+

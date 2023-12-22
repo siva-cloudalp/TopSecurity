@@ -1,0 +1,30 @@
+/* Edited for Threads Theme */
+
+
+.cart-item-actions-links {
+	margin-top: $sc-margin-lv4;
+	@media (max-width: $screen-sm-min) {
+		// Philip test
+		a{
+			//@extend .button-secondary;
+			//@extend .button-small;
+		}
+	}	
+	a {
+		color: $sc-color-secondary;
+		font-size: $sc-font-size-m;
+		// change to small?
+		
+		@media (min-width: $screen-sm-min) {
+			font-size: $sc-font-size-m;
+		}
+	}
+
+}
+
+.link-separator {
+	padding: 0 $sc-padding-lv1;
+	@media (min-width: $screen-sm-min) {
+		padding: 0 $sc-padding-lv2;
+	}
+}

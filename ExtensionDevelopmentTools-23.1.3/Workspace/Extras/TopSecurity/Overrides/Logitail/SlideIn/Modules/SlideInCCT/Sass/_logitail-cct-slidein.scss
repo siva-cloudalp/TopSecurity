@@ -1,0 +1,165 @@
+.e-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .3);
+    z-index: 5000;
+}
+
+.m-kcc-menu__button {
+    position: fixed;
+    z-index: 20;
+    right: 20px;
+    bottom: 20px;
+    display: flex;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    padding: 0 1px;
+    cursor: pointer;
+    transition: width .7s .15s, opacity .15s;
+}
+
+.m-kcc-menu {
+    width: 80vw;
+    max-width: 360px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    transition: -webkit-transform .3s ease-in;
+    transition: transform .3s ease-in;
+    transition: transform .3s ease-in, -webkit-transform .3s ease-in;
+    margin-right: -360px;
+    overflow-y: auto;
+    z-index: 5001;
+
+    &.open {
+        -webkit-transform: translate(-360px) !important;
+        -ms-transform: translate(-360px) !important;
+        transform: translate(-360px) !important;
+        // https://www.cssmatic.com/box-shadow
+        box-shadow: 0px 0px 26px 2px rgba(0, 0, 0, 0.8);
+    }
+
+    header.headerslidein {
+        background: linear-gradient(45deg, $sc-color-darkblue, $sc-color-primary);
+        padding: 30px;
+        height: 130px;
+    }
+
+    section h5 {
+        color: $sc-color-darkblue;
+    }
+
+    section a:hover h5 {
+        color: $sc-color-primary;
+        cursor: pointer;
+    }
+
+    section a:hover img {
+        width: 23px;
+    }
+
+    section h3 {
+        color: $sc-color-darkblue;
+        margin-bottom: 20px
+    }
+
+    section img {
+        width: 20px;
+    }
+
+    section a {
+        padding: 30px;
+        display: block;
+        cursor: pointer;
+
+        &:hover {
+            background: #fbfbfb;
+
+        }
+    }
+
+    section.supportfaq {
+        padding: 30px;
+        
+        @media (min-width: $screen-sm-min) {
+            bottom: 0;
+            position: absolute;
+          }
+    }
+
+    section.supportfaq p:before {
+        content: "‣ ";
+    }
+
+    section.supportfaq p {
+        margin: 10px 0;
+        line-height: 1.25;
+        /* border-bottom: #f1f1f1 solid 1px; */
+    }
+
+    section.supportfaq p:hover {
+        color: $sc-color-primary;
+        cursor: pointer;
+    }
+
+    section.supportfaq a {
+        padding: 0;
+    }
+
+
+}
+
+
+
+.sb1 {}
+
+.m-kcc-menu.open section {
+    border-bottom: solid #f5f5f5 1px;
+
+}
+
+.m-kcc-menu_close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 20px;
+    cursor: pointer;
+    z-index: 5000;
+    // hide content (so the ugly format isn't shown)
+    //display: none;
+
+}
+
+// For Google Chrome
+::-webkit-scrollbar-track {
+    background: white;
+}
+
+// For Internet Explorer
+body {
+    scrollbar-track-color: white;
+}
+
+// philipdenys
+
+.headerslidein img {
+    width: 70px;
+}
+
+.headerslidein h1 {
+    font-size: 1.3rem;
+    //border: red solid;
+    text-transform: none;
+    padding-top: 15px;
+    font-weight: 600;
+}

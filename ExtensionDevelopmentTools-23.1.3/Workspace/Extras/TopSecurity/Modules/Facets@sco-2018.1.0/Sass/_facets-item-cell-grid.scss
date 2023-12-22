@@ -1,0 +1,201 @@
+// Edited for Threads Theme */
+
+// Data order
+// - brand
+// - productTitle
+// - sku
+// - priceLevel1
+// - priceBruto
+
+.facets-item-cell-grid {
+	@extend .item-cell;
+	.cart-add-to-cart-button-container {
+		//width:100%;
+		@media (max-width: $screen-sm-min) {
+			float: right;
+
+			// .add-to-cart-icon {
+			// 	font-size: 1rem;
+			// 	line-height: 23px;
+			// 	min-width: 23px;
+			// 	color: white;
+			// }
+		}
+	}
+	// added by philipdenys
+	.cart-add-to-cart-button-button {
+		//padding:20px 20px;
+		font-size: $sc-font-size-m;
+		//border: red solid;
+		padding: 0px 5px;
+    	width: auto !important;
+		float: right;
+		//border-radius: 0px 3px 3px 0px;
+	}
+// product pricing (sofia pro)
+// brandname: 14px, medium, lh 17px
+// productname: 18px, 1.2rem semibold lh 22px
+// sku: 14px, 0.93rem medium lh 17px
+// price: 18px, semibold lh 21px
+// brutopricing: 14px, regular lh 14px
+
+	.product-views-price-lead {
+		@extend .ts-pricelevel1-text;
+		
+		// also in related items
+	}
+	.product-views-price-lead.orange{
+		color: $sc-color-orange;
+	}
+	.product-views-price-lead_bruto {
+		@extend .ts-pricebruto-text;
+	}	
+	.product-views-price {
+		margin: 5px 0;
+		width: 70%;
+		float: left;
+		// @media (max-width: $screen-xs-min) {
+		// 	width: 62%;
+		// }
+	}
+	span.buttonText {
+		display: none;
+	}
+	.cart-quickaddtocart-price {
+		// margin-bottom:$sc-margin-lv2;
+	}
+	
+	// not for mobile!
+	.cart-add-to-cart-button-container {
+		//margin-top: -76px;
+		   padding: 0;
+		   display: flow-root;
+		 @media (max-width: $screen-xs-min) {
+			//display: none;
+		} 
+		@media (max-width: $screen-sm-min) {
+			margin-top: 11px;
+			padding: 0;
+		}
+	}
+	 
+}
+.facets-item-cell-addtocompare {
+    display: inline-block;
+		margin-top: $sc-margin-lv1;
+		width: 100%;
+	input[type="checkbox"], input[type="radio"] {
+		  // Double-sized Checkboxes */
+		  -ms-transform: scale(1.2); // IE */
+		  -moz-transform: scale(1.2); // FF */
+		  -webkit-transform: scale(1.2); // Safari and Chrome */
+		  -o-transform: scale(1.2); // Opera */
+		  transform: scale(1.2);
+		  margin-top: 5px;
+		  vertical-align: middle;
+	}
+	@media (max-width: $screen-xs-max) {
+		display: none;
+	}
+}
+
+.facets-item-cell-grid-quick-view-wrapper {
+	@extend .item-cell-quick-view-wrapper;
+}
+
+.facets-item-cell-grid-quick-view-link {
+	@extend .item-cell-quick-view-link; 
+}
+
+.facets-item-cell-grid-image-wrapper {
+	position:relative;
+	text-align:center;
+}
+
+.facets-item-cell-grid-link-image {}
+
+.facets-item-cell-grid-quick-view-icon {}
+
+.facets-item-cell-grid-stock {}
+
+
+.facets-item-cell-grid-details {
+	text-align:left;
+	.facets-item-cell-grid-brand-link{
+		
+		display: block;
+   		height: 30px;
+		
+		.facets-item-cell-grid-brand {
+			color: #1C2D41;
+		}
+	}
+	.facets-item-cell-grid-brand{
+		@extend .item-cell-brand;
+	}
+	//
+	.product-line-stock {
+		text-align:left;
+	}
+	.cart-add-to-cart-button-container {
+		padding: 0 0 $sc-padding-lv3 0;
+	}	
+}
+
+.facets-item-cell-grid-image {
+	@extend .item-cell-image;
+	width:auto;
+	height:auto;
+}
+.facets-item-cell-grid-brand{
+	@extend .item-cell-brand;
+}
+
+.facets-item-cell-grid-title {
+	@extend .item-cell-title;
+	color: #1C2D41;
+}
+.facets-item-cell-grid-sku{
+	@extend .item-cell-sku;
+}
+
+.facets-item-cell-grid-price {
+	@extend .small-price;
+	// margin-bottom:$sc-margin-lv2;
+}
+
+.facets-item-cell-grid-rating {
+	text-align:left;
+	display: inline-block;
+}
+
+.facets-item-cell-grid {
+	.global-views-star-rating-area {
+		margin-bottom:$sc-margin-lv2;
+	}
+}
+
+.facets-item-cell-grid-stock-message {
+	text-align:left;
+}
+
+
+// compare feature
+.facets-facet-browse{
+	.compare-items-title {
+		color:white;
+		top: 1px;
+	}
+	.addedfromcomparison-remove-button-icon{
+		color:white;
+	}
+	.compare-items-container-hide-button {
+		font-size: 15px;
+		color: white;
+		top: 10px;
+		position: absolute;
+	}
+	button.productcomparison-button-share {
+		display: none;
+	}
+}
