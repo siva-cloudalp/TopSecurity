@@ -1,27 +1,27 @@
 {{#if ispurchasable}}
-  <section class="itemrelations">
+  {{#if show_add_cart}}
+    <section class="itemrelations">
 
-    <div class="itemrelations-itemrelations-cart">
-      <button type="submit" data-id="{{model.internalid}}" data-value="" data-action="addToCart"
-        class="itemrelations-itemrelations-add-to-cart-button">
-        <i class="add-to-cart-icon"></i>
-      </button>
-    </div>
-
-    <div class="itemrelations-itemrelations-quantity-options">
-      <div class="itemrelations-itemrelations-quantity-container">
-        <button type="button" class="itemrelations-itemrelations-quantity-remove" data-action="updateQuantity"
-          data-value="-1">-</button>
-        <input type="number" name="itemRelationquantity" id="ItemRelationquantity" data-action="changeQuantity"
-          class="itemrelations-itemrelations-quantity-value" value="1" min="1">
-        <button type="button" class="itemrelations-itemrelations-quantity-add" data-action="updateQuantity"
-          data-value="1">+</button>
+      <div class="itemrelations-itemrelations-cart">
+        <button type="submit" data-id="{{model.internalid}}" data-value="" data-action="addToCart"
+          class="itemrelations-itemrelations-add-to-cart-button">
+          <i class="add-to-cart-icon"></i>
+        </button>
       </div>
-    </div>
 
+      <div class="itemrelations-itemrelations-quantity-options">
+        <div class="itemrelations-itemrelations-quantity-container">
+          <button type="button" class="itemrelations-itemrelations-quantity-remove" data-action="updateQuantity"
+            data-value="-1">-</button>
+          <input type="number" name="itemRelationquantity" id="ItemRelationquantity" data-action="changeQuantity"
+            class="itemrelations-itemrelations-quantity-value" value="1" min="1">
+          <button type="button" class="itemrelations-itemrelations-quantity-add" data-action="updateQuantity"
+            data-value="1">+</button>
+        </div>
+      </div>
 
-
-  </section>
+    </section>
+  {{/if}}
 {{/if}}
 
 

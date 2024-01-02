@@ -7,6 +7,7 @@ define('CloudAlp.ItemRelations.ItemRelations.View'
 		, 'LiveOrder.Model'
 		, 'underscore'
 		, 'Cart.Confirmation.Helpers'
+		, 'Profile.Model'
 	]
 	, function (
 		cloudalp_itemrelations_itemrelations_tpl
@@ -15,6 +16,7 @@ define('CloudAlp.ItemRelations.ItemRelations.View'
 		, LiveOrderModel
 		, _
 		, CartConfirmationHelpers
+		, ProfileModel
 	) {
 		'use strict';
 
@@ -103,9 +105,20 @@ define('CloudAlp.ItemRelations.ItemRelations.View'
 			//@method getContext @return CloudAlp.ItemRelations.ItemRelations.View.Context
 			, getContext: function getContext() {
 				//@class CloudAlp.ItemRelations.ItemRelations.View.Context
+				let profileModel = ProfileModel.getInstance();
+
+				let hidePrice = profileModel.hidePrices(); // this will work based on Required login to see price
+
+				const isLoggedIn = profileModel.get('isLoggedIn') === 'T' ? true : false;
+
+				let show_add_cart = true;
+
+				(hidePrice) ? show_add_cart = isLoggedIn : show_add_cart;
+
 				return {
 					model: this.model,
-					ispurchasable: this.model.get('ispurchasable')
+					ispurchasable: this.model.get('ispurchasable'),
+					show_add_cart: show_add_cart
 				};
 			}
 		});
